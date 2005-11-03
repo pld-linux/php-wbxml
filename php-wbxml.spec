@@ -3,9 +3,10 @@ Summary(pl):	Wrapper PHP do biblioteki WBXML
 Name:		php-wbxml
 Version:	0.1
 Release:	0.1
-License:	Apache
+License:	PHP 2.02
 Group:		Libraries
 Source0:	http://www.k-fish.de/fileadmin/wbxml-%{version}.tar.gz
+# Source0-md5:	73c23a4848478715254be2dc104596ec
 URL:		http://www.k-fish.de/SyncML_support.57.0.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -60,4 +61,4 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc README CREDITS
-%attr(755,root,root) %{_libdir}/php/*
+%attr(755,root,root) %{_libdir}/php/*.so
