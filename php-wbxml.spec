@@ -1,4 +1,5 @@
-Summary:	PHP WBXML Libraray wrapper
+Summary:	PHP WBXML Library wrapper
+Summary(pl):	Wrapper PHP do biblioteki WBXML
 Name:		php-wbxml
 Version:	0.1
 Release:	0.1
@@ -8,8 +9,8 @@ Source0:	http://www.k-fish.de/fileadmin/wbxml-%{version}.tar.gz
 URL:		http://www.k-fish.de/SyncML_support.57.0.html
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	wbxml2-devel
 BuildRequires:	php-devel
+BuildRequires:	wbxml2-devel
 Requires:	wbxml2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -17,7 +18,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is a simple extension that acts as a wrapper around the
+conversion functions in the WBXML Library written by Aymerick Jehanne.
+
+%description -l en
+This is a simple extension that acts as a wrapper around the
 conversion functions in the WBXML Library written by Aymerick Jéhanne.
+
+%description
+To jest proste rozszerzenie obudowuj±ce funkcje konwersji z biblioteki
+WBXML napisanej przez Aymericka Jéhanne'a.
 
 %prep
 %setup -q -n wbxml-%{version}
@@ -34,7 +43,8 @@ phpize
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
-%{__make} install INSTALL_ROOT=$RPM_BUILD_ROOT
+%{__make} install \
+	INSTALL_ROOT=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,4 +60,4 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc README CREDITS
-%{_libdir}/php/*
+%attr(755,root,root) %{_libdir}/php/*
