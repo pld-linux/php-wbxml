@@ -14,6 +14,7 @@ URL:		http://www.k-fish.de/SyncML_support.57.0.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	php-devel >= 3:5.0.0
+BuildRequires:	rpmbuild(macros) >= 1.322
 BuildRequires:	wbxml2-devel
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
