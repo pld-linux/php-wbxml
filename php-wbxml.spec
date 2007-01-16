@@ -29,7 +29,7 @@ conversion functions in the WBXML Library written by Aymerick Jehanne.
 This is a simple extension that acts as a wrapper around the
 conversion functions in the WBXML Library written by Aymerick Jéhanne.
 
-%description
+%description -l pl
 To jest proste rozszerzenie obudowuj±ce funkcje konwersji z biblioteki
 WBXML napisanej przez Aymericka Jéhanne'a.
 
