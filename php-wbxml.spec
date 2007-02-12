@@ -1,6 +1,6 @@
 %define		_modname	wbxml
 Summary:	PHP WBXML Library wrapper
-Summary(pl):	Wrapper PHP do biblioteki WBXML
+Summary(pl.UTF-8):   Wrapper PHP do biblioteki WBXML
 Name:		php-wbxml
 Version:	0.1
 Release:	0.2
@@ -23,13 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a simple extension that acts as a wrapper around the
 conversion functions in the WBXML Library written by Aymerick Jehanne.
 
-%description -l en
+%description -l en.UTF-8
 This is a simple extension that acts as a wrapper around the
-conversion functions in the WBXML Library written by Aymerick Jéhanne.
+conversion functions in the WBXML Library written by Aymerick JÃ©hanne.
 
-%description -l pl
-To jest proste rozszerzenie obudowuj±ce funkcje konwersji z biblioteki
-WBXML napisanej przez Aymericka Jéhanne'a.
+%description -l pl.UTF-8
+To jest proste rozszerzenie obudowujÄ…ce funkcje konwersji z biblioteki
+WBXML napisanej przez Aymericka JÃ©hanne'a.
 
 %prep
 %setup -q -n wbxml-%{version}
