@@ -1,6 +1,6 @@
 %define		_modname	wbxml
 Summary:	PHP WBXML Library wrapper
-Summary(pl.UTF-8):   Wrapper PHP do biblioteki WBXML
+Summary(pl.UTF-8):	Wrapper PHP do biblioteki WBXML
 Name:		php-wbxml
 Version:	0.1
 Release:	0.2
