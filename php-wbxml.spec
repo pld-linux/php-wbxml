@@ -13,10 +13,10 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.344
-BuildRequires:	wbxml2-devel
+BuildRequires:	libwbxml-devel
 %{?requires_php_extension}
 Requires:	php-common >= 4:5.0.4
-Requires:	wbxml2
+Requires:	libwbxml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
